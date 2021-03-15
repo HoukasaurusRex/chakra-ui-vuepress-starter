@@ -6,14 +6,14 @@
 // https://v1.vuepress.vuejs.org/config/
 
 module.exports = {
-  title: 'VuePress + CodeSandbox',
-  description: 'VuePress starter template for CodeSandbox',
+  title: 'VuePress + ChakraUI',
+  description: 'VuePress starter template with ChakraUI',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
       { text: 'VuePress', link: 'https://vuepress.vuejs.org/' },
-      { text: 'GitHub', link: 'https://github.com/vicbergquist/codesandbox-vuepress/' },
+      { text: 'GitHub', link: 'https://github.com/HoukasaurusRex/chakra-ui-vuepress-starter' },
     ]
   }
 }

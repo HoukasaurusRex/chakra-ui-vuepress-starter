@@ -69,20 +69,6 @@ When ejecting you are on your own and **will not** be receiving future updates o
 
 To get started, copy the default theme source code into `.vuepress/theme` using the `vuepress eject [targetDir]` command.
 
-## Custom Layouts
-
-VuePress also lets you specify custom layout components for specific pages, instead of the default page layout component provided by the default theme.
-
-To do this, you add YAML front matter to your markdown file and specify the layout component you want to use.
-
- ```yaml
- ---
- layout: SpecialLayout
- ---
- ```
-
-Visit our [Special Layout Page](/special-layout) to see an example of a custom page layout in action. This component is located in the `.vuepress/components` directory, which is where you register custom layout components and other components you want to have global access to.
-
 ## Custom Themes
 
 When you want to create a custom VuePress theme, you add a `theme` directory under `.vuepress` (`.vuepress/theme`) and start by adding a `Layout.vue` file. From there it's the same as developing a normal Vue application. It is entirely up to you how you organize your theme.
@@ -103,6 +89,6 @@ For more information about how to get started with custom VuePress themes, pleas
 
 ## Credits
 
-This codesandbox template was created by [Victoria Bergquist](https://twitter.com/vicbergquist). The information on this page is gathered from the official [VuePress documentation](https://v1.vuepress.vuejs.org) for the latest version of VuePress.
+This codesandbox template was created by [JT Houk](https://twitter.com/HoukasaurusRex). The information on this page is gathered from the official [VuePress documentation](https://v1.vuepress.vuejs.org) for the latest version of VuePress.
 
-If you would like to contribute to this template, please go to the [codesandbox-vuepress repository](https://github.com/vicbergquist/codesandbox-vuepress) on GitHub.
+If you would like to contribute to this template, please go to the [chakra-ui-vuepress-starter repository](https://github.com/HoukasaurusRex/chakra-ui-vuepress-starter) on GitHub.
