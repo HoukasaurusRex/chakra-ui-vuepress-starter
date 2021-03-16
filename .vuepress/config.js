@@ -6,14 +6,18 @@
 // https://v1.vuepress.vuejs.org/config/
 
 module.exports = {
-  title: 'VuePress + ChakraUI',
-  description: 'VuePress starter template with ChakraUI',
+  title: "VuePress + ChakraUI",
+  description: "VuePress starter template with ChakraUI",
   themeConfig: {
+    repo: "HoukasaurusRex/chakra-ui-vuepress-starter",
+    editLinks: true,
+    editLinkText: "Help us improve this page!",
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'VuePress', link: 'https://vuepress.vuejs.org/' },
-      { text: 'GitHub', link: 'https://github.com/HoukasaurusRex/chakra-ui-vuepress-starter' },
-    ]
+      { text: "Home", link: "/" },
+      { text: "Guide", link: "/guide/" },
+      { text: "VuePress", link: "https://vuepress.vuejs.org/" },
+      { text: "ChakraUI", link: "https://vue.chakra-ui.com/" }
+    ],
+    smoothScroll: true
   }
 }
