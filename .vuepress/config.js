@@ -6,7 +6,7 @@
 // https://v1.vuepress.vuejs.org/config/
 
 module.exports = {
-  title: "VuePress + ChakraUI",
+  title: "ChakraUI ❤️ VuePress",
   description: "VuePress starter template with ChakraUI",
   themeConfig: {
     repo: "HoukasaurusRex/chakra-ui-vuepress-starter",

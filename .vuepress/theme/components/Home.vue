@@ -1,14 +1,29 @@
 <template>
-  <CBox as="main" class="home" :aria-labelledby="data.heroText !== null ? 'main-title' : null" mx="auto">
-    <CBox as="header" d="flex" flexDir="column" alignItems="center" paddingTop="2rem" textAlign="center">
-      <CStack is-inline v-if="data.heroImages">
-        <img
-          v-for="image in data.heroImages"
-          :key="image.name"
-          :src="$withBase(image.src)"
-          :alt="image.alt"
-          class="image"
-        />
+  <CBox
+    as="main"
+    class="home"
+    :aria-labelledby="data.heroText !== null ? 'main-title' : null"
+    mx="auto"
+  >
+    <CBox
+      as="header"
+      d="flex"
+      flexDir="column"
+      alignItems="center"
+      paddingTop="2rem"
+      textAlign="center"
+    >
+      <CStack :is-inline="[false, true]" v-if="data.heroImages">
+        <CBox v-for="image in data.heroImages">
+          <CBox
+            as="img"
+            :key="image.name"
+            :src="$withBase(image.src)"
+            :alt="image.alt"
+            maxH="280px"
+            w="280px"
+          />
+        </CBox>
       </CStack>
 
       <CHeading
@@ -17,7 +32,7 @@
         fontSize="3rem"
         m="1.8rem auto"
       >
-        {{ data.heroText || $title || 'Hello' }}
+        {{ data.heroText || $title || "Hello" }}
       </CHeading>
 
       <CText
@@ -28,7 +43,7 @@
         lineHeight="1.3"
         color="gray.500"
       >
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
+        {{ data.tagline || $description || "Welcome to your VuePress site" }}
       </CText>
 
       <CButton
@@ -43,7 +58,7 @@
           backgroundColor: 'vue.400'
         }"
       >
-      {{data.actionText}}
+        {{ data.actionText }}
       </CButton>
     </CBox>
     <CBox
@@ -52,10 +67,7 @@
       p="1.2rem 0"
       margin-top="2.5rem"
       d="flex"
-      :flexDir="[
-        'column',
-        'row'
-      ]"
+      :flexDir="['column', 'row']"
       flex-wrap="wrap"
       align-items="flex-start"
       align-content="stretch"
@@ -66,14 +78,8 @@
         :key="index"
         flex-grow="1"
         flex-basis="30%"
-        :max-width="[
-          '100%',
-          '30%'
-        ]"
-        :p="[
-          '0.5rem',
-          '0'
-        ]"
+        :max-width="['100%', '30%']"
+        :p="['0.5rem', '0']"
       >
         <CHeading
           as="h2"
@@ -94,8 +100,8 @@
       as="footer"
       v-if="data.footer"
       padding="2.5rem"
-      border-top="1px solid #eee"
-      text-align="center"
+      borderTop="1px solid #eee"
+      textAlign="center"
       color="gray.500"
     >
       {{ data.footer }}
@@ -117,11 +123,11 @@ export default {
     CStack
   },
   computed: {
-    data () {
+    data() {
       return this.$page.frontmatter
     },
 
-    actionLink () {
+    actionLink() {
       return {
         link: this.data.actionLink,
         text: this.data.actionText
@@ -132,12 +138,8 @@ export default {
 </script>
 
 <style lang="stylus">
-.home
-  padding $navbarHeight 2rem 0
-  max-width $homePageWidth
-
-  .image
-    max-height 280px
-    width 280px
-
+.home {
+  padding: $navbarHeight 2rem 0;
+  max-width: $homePageWidth;
+}
 </style>

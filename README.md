@@ -1,10 +1,10 @@
 ---
 home: true
 heroImages:
-  - src: /vuepress.png
-    name: Vuepress
   - src: /chakra.svg
     name: Chakra
+  - src: /vuepress.png
+    name: Vuepress
 actionText: Get Started →
 actionLink: /guide/
 features:

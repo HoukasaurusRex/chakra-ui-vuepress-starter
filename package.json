@@ -2,7 +2,7 @@
   "name": "chakra-ui-vuepress-starter",
   "version": "1.0.0",
   "description": "Vuepress starter with ChakraUI installed",
-  "author": "Victoria Bergquist",
+  "author": "JT Houk",
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev",
@@ -13,11 +13,7 @@
     "url": "https://github.com/vicbergquist/codesandbox-vuepress"
   },
   "devDependencies": {},
-  "keywords": [
-    "chakra-ui",
-    "vuepress",
-    "vue"
-  ],
+  "keywords": ["chakra-ui", "vuepress", "vue"],
   "dependencies": {
     "@chakra-ui/vue": "0.8.0",
     "@emotion/css": "11.1.3",
